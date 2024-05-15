@@ -1,4 +1,4 @@
-const AllandCraft = () => {
+const AllArtandCraft = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const AllandCraft = () => {
     );
 };
 
-export default AllandCraft;
+export default AllArtandCraft;

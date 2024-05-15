@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Landscape Painting",
+        "description": "A detailed landscape painting showcasing the beauty of nature.",
+        "type": "Painting",
+        "image": "https://example.com/images/landscape_painting.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Portrait Drawing",
+        "description": "An intricate portrait drawing capturing the essence of a person.",
+        "type": "Drawing",
+        "image": "https://example.com/images/portrait_drawing.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Watercolor Painting",
+        "description": "A vibrant watercolor painting with delicate hues.",
+        "type": "Painting",
+        "image": "https://example.com/images/watercolor_painting.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Oil Painting",
+        "description": "A rich and textured oil painting with vivid colors.",
+        "type": "Painting",
+        "image": "https://example.com/images/oil_painting.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Charcoal Sketching",
+        "description": "A striking charcoal sketch with bold contrasts.",
+        "type": "Sketching",
+        "image": "https://example.com/images/charcoal_sketching.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cartoon Drawing",
+        "description": "A fun and whimsical cartoon drawing with playful characters.",
+        "type": "Drawing",
+        "image": "https://example.com/images/cartoon_drawing.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Abstract Painting",
+        "description": "An abstract painting that evokes emotion through colors and shapes.",
+        "type": "Painting",
+        "image": "https://example.com/images/abstract_painting.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Digital Illustration",
+        "description": "A vibrant digital illustration created with graphic software.",
+        "type": "Illustration",
+        "image": "https://example.com/images/digital_illustration.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Pastel Drawing",
+        "description": "A soft pastel drawing with gentle gradients and blends.",
+        "type": "Drawing",
+        "image": "https://example.com/images/pastel_drawing.jpg"
+    }
+]
