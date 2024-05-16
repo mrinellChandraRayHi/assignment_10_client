@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const AddCraft = () => {
     const handleAddform=(e)=>{
         e.preventDefault();
@@ -8,6 +10,26 @@ const AddCraft = () => {
         const photo=form.photo.value;
         const addCraft={name, description, properties, photo}
         console.log(addCraft);
+        fetch('http://localhost:5000/crafts',{
+            method:"POST",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(addCraft)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your craft has been saved",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        })
     }
     return (
         <div>
