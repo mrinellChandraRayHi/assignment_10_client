@@ -7,6 +7,7 @@ import MyArtandCraft from "../Pages/MyArtandCraft";
 import BuyForm from "../Components/BuyForm";
 import SignUp from "../Pages/SignUp";
 import SignIn from "../Pages/SignIn";
+import PrivateRouter from "../PrivateRouter/PrivateRouter";
 
 export const router = createBrowserRouter([
     {
@@ -19,19 +20,19 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/addArtAndCraft',
-                element:<AllandCraft/>
+                element:<PrivateRouter><AllandCraft/></PrivateRouter>
             },
             {
                 path:'/addCraft',
-                element:<AddCraft/>
+                element:<PrivateRouter><AddCraft/></PrivateRouter>
             },
             {
                 path:'/myArtAndcraft',
-                element:<MyArtandCraft/>
+                element:<PrivateRouter><MyArtandCraft/></PrivateRouter>
             },
             {
                 path:'/buyForm',
-                element:<BuyForm/>
+                element:<PrivateRouter><BuyForm/></PrivateRouter>
             },
             {
                 path:'/signUp',
