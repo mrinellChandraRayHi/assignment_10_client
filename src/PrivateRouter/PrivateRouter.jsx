@@ -8,7 +8,7 @@ const PrivateRouter = ({children}) => {
         return children;
     }
     if(loader){
-        return <div><span className="loading loading-spinner loading-lg"></span></div>
+        return <div className="flex items-center justify-center h-screen"><span className="loading loading-spinner loading-lg"></span></div>
     }
     return (
         <div>
