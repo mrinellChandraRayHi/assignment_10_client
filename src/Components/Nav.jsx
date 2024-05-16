@@ -16,7 +16,7 @@ const Nav = () => {
     <li><NavLink to='/'>Home</NavLink></li>
     {
         user && <>
-        <li><NavLink to='/addArtAndCraft'>All Art & craft Items</NavLink></li>
+        <li><NavLink to='/allArtAndcraft'>All Art & craft Items</NavLink></li>
         <li><NavLink to='/addCraft'>Add Craft Item</NavLink></li>
         <li><NavLink to='/myArtAndcraft'>My Art & Craft List</NavLink></li>
         </>
