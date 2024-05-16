@@ -4,62 +4,62 @@
         "name": "Landscape Painting",
         "description": "A detailed landscape painting showcasing the beauty of nature.",
         "type": "Painting",
-        "image": "https://example.com/images/landscape_painting.jpg"
+        "image": "https://cdn.shopify.com/s/files/1/0625/3818/6989/files/1_07e7770a-7a1a-4dfe-83be-b502b2d47d57.jpg?v=1677310581"
     },
     {
         "id": 2,
         "name": "Portrait Drawing",
         "description": "An intricate portrait drawing capturing the essence of a person.",
         "type": "Drawing",
-        "image": "https://example.com/images/portrait_drawing.jpg"
+        "image": "https://i.ytimg.com/vi/W9pTY2AEUp4/maxresdefault.jpg"
     },
     {
         "id": 3,
         "name": "Watercolor Painting",
         "description": "A vibrant watercolor painting with delicate hues.",
         "type": "Painting",
-        "image": "https://example.com/images/watercolor_painting.jpg"
+        "image": "https://bellahomeco.com.au/cdn/shop/products/090_92ef5137-f671-42ab-ac98-a7ee94bc8d98.jpg?v=1622179632&width=1445"
     },
     {
         "id": 4,
         "name": "Oil Painting",
         "description": "A rich and textured oil painting with vivid colors.",
         "type": "Painting",
-        "image": "https://example.com/images/oil_painting.jpg"
+        "image": "https://images-cdn.ubuy.co.id/634d09086d9f6623d0744399-hand-painted-animal-oil-painting-3d.jpg"
     },
     {
         "id": 5,
         "name": "Charcoal Sketching",
         "description": "A striking charcoal sketch with bold contrasts.",
         "type": "Sketching",
-        "image": "https://example.com/images/charcoal_sketching.jpg"
+        "image": "https://qph.cf2.quoracdn.net/main-qimg-fe330c17267ac10774ce620816a147f6-lq"
     },
     {
         "id": 6,
         "name": "Cartoon Drawing",
         "description": "A fun and whimsical cartoon drawing with playful characters.",
         "type": "Drawing",
-        "image": "https://example.com/images/cartoon_drawing.jpg"
+        "image": "https://i.pinimg.com/236x/77/f3/28/77f3284ead08f26380be0246a3acb006.jpg"
     },
     {
         "id": 7,
         "name": "Abstract Painting",
         "description": "An abstract painting that evokes emotion through colors and shapes.",
         "type": "Painting",
-        "image": "https://example.com/images/abstract_painting.jpg"
+        "image": "https://www.dreamsart.it/wp-content/uploads/2019/04/image1-2.jpeg"
     },
     {
         "id": 8,
         "name": "Digital Illustration",
         "description": "A vibrant digital illustration created with graphic software.",
         "type": "Illustration",
-        "image": "https://example.com/images/digital_illustration.jpg"
+        "image": "https://blog.icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg"
     },
     {
         "id": 9,
         "name": "Pastel Drawing",
         "description": "A soft pastel drawing with gentle gradients and blends.",
         "type": "Drawing",
-        "image": "https://example.com/images/pastel_drawing.jpg"
+        "image": "https://qph.cf2.quoracdn.net/main-qimg-7692917b32ae3bad3f00cd58fe4610c6-lq"
     }
 ]

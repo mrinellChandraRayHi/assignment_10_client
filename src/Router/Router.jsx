@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import AllandCraft from "../Pages/AllArtandCraft";
 import AddCraft from "../Pages/AddCraft";
 import MyArtandCraft from "../Pages/MyArtandCraft";
+import BuyForm from "../Components/BuyForm";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path:'/myArtAndcraft',
                 element:<MyArtandCraft/>
+            },
+            {
+                path:'/buyForm',
+                element:<BuyForm/>
             }
         ]
     },
