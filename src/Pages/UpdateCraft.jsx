@@ -13,7 +13,7 @@ const UpdateCraft = () => {
         const photo=form.photo.value;
         const addCraft={name, description, properties, photo}
         console.log(addCraft);
-        fetch(`https://assignment-10-server-k8s1b6yxy-mrinells-projects.vercel.app/crafts/${_id}`,{
+        fetch(`https://assignment-10-server-8maov68o3-mrinells-projects.vercel.app/crafts/${_id}`,{
             method:"PUT",
             headers:{
                 "Content-Type": "application/json"
