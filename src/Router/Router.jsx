@@ -9,11 +9,13 @@ import SignIn from "../Pages/SignIn";
 import PrivateRouter from "../PrivateRouter/PrivateRouter";
 import AllArtandCraft from "../Pages/AllArtandCraft";
 import UpdateCraft from "../Pages/UpdateCraft";
+import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout/>,
+        errorElement:<ErrorPage/>,
         children:[
             {
                 path:'/',
