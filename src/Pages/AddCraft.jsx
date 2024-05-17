@@ -10,7 +10,7 @@ const AddCraft = () => {
         const photo=form.photo.value;
         const addCraft={name, description, properties, photo}
         console.log(addCraft);
-        fetch('https://assignment-10-server-8maov68o3-mrinells-projects.vercel.app/crafts',{
+        fetch('https://assignment-10-server-lovat-tau.vercel.app/crafts',{
             method:"POST",
             headers:{
                 "Content-Type": "application/json"
