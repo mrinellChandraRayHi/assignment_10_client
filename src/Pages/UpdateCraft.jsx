@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const UpdateCraft = () => {
     const loadedUpdateCaraft=useLoaderData()
-    const {name, description, properties, photo}=loadedUpdateCaraft;
+    const {name, description, properties, photo, _id}=loadedUpdateCaraft;
     const handleUpdateform=(e)=>{
         e.preventDefault();
         const form=e.target;
@@ -13,8 +13,8 @@ const UpdateCraft = () => {
         const photo=form.photo.value;
         const addCraft={name, description, properties, photo}
         console.log(addCraft);
-        fetch('http://localhost:5000/crafts',{
-            method:"POST",
+        fetch(`http://localhost:5000/crafts/${_id}`,{
+            method:"PUT",
             headers:{
                 "Content-Type": "application/json"
             },
@@ -23,11 +23,11 @@ const UpdateCraft = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
-            if(data.insertedId){
+            if(data.modifiedCount>0){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your craft has been saved",
+                    title: "Your craft has been Updated",
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -52,7 +52,7 @@ const UpdateCraft = () => {
                     </div>
                     <div>
                         <label className="text-xl font-bold block" htmlFor="">Properties:</label>
-                        <select className="border border-black w-[300px] py-1 rounded" name="properties" id="">
+                        <select defaultValue={properties} className="border border-black w-[300px] py-1 rounded" name="properties" id="">
                             <option value="damage">damage</option>
                             <option value="durability">durability</option>
                         </select>

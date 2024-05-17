@@ -33,7 +33,9 @@ const Nav = () => {
                     {navlink}
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <Link to='/'>
+                <a className="btn btn-ghost text-xl font-bold hover:bg-blue-400 hover:text-white">Picture Website</a>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
