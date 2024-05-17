@@ -6,10 +6,11 @@ const AddCraft = () => {
         const form=e.target;
         const item_name=form.item_name.value;
         const subcategory_name=form.subcategory_name.value;
+        const description=form.description.value;
         const price=form.price.value;
         const photo=form.photo.value;
         const processing_time=form.processing_time.value;
-        const addCraft={item_name, subcategory_name, price, photo, processing_time}
+        const addCraft={item_name, subcategory_name, price, photo, processing_time, description}
         console.log(addCraft);
         fetch('https://assignment-10-server-lovat-tau.vercel.app/crafts',{
             method:"POST",
