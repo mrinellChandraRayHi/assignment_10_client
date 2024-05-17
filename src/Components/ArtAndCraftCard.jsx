@@ -4,7 +4,7 @@ import { TbListDetails } from "react-icons/tb";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 const ArtAndCraftCard = ({ArtAndCraft, artAndCrafts, setArtAndCrafts}) => {
-    const {name, description, properties, photo, _id}=ArtAndCraft;
+    const {item_name, subcategory_name, price, photo, processing_time, _id}=ArtAndCraft;
     const handleDelete=(_id)=>{
         console.log(_id);
         Swal.fire({
@@ -40,9 +40,10 @@ const ArtAndCraftCard = ({ArtAndCraft, artAndCrafts, setArtAndCrafts}) => {
         <div className="card card-compact bg-base-100 shadow-xl">
             <figure><img className="w-full h-[200px]" src={photo} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">Name: {name}</h2>
-                <p>Properties: {properties}</p>
-                <p>Description: {description}</p>
+                <h2 className="card-title">Name: {item_name}</h2>
+                <p>Subcategory: {subcategory_name}</p>
+                <p>Price: {price}</p>
+                <p>Processing_time: {processing_time}</p>
                 <div className="card-actions justify-end">
                 <button className="btn btn-primary"><TbListDetails className="text-2xl" /></button>
                 <Link to={`/updateCraft/${_id}`}>

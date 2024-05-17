@@ -4,11 +4,12 @@ const AddCraft = () => {
     const handleAddform=(e)=>{
         e.preventDefault();
         const form=e.target;
-        const name=form.name.value;
-        const description=form.description.value;
-        const properties=form.properties.value;
+        const item_name=form.item_name.value;
+        const subcategory_name=form.subcategory_name.value;
+        const price=form.price.value;
         const photo=form.photo.value;
-        const addCraft={name, description, properties, photo}
+        const processing_time=form.processing_time.value;
+        const addCraft={item_name, subcategory_name, price, photo, processing_time}
         console.log(addCraft);
         fetch('https://assignment-10-server-lovat-tau.vercel.app/crafts',{
             method:"POST",
@@ -40,22 +41,27 @@ const AddCraft = () => {
                     </div>
                     <div className="bg-gray-300 p-10 my-20 rounded">
                     <div>
-                        <label className="text-xl font-bold" htmlFor="">Name:</label>
-                        <input className="w-full border border-black rounded py-2 px-2" type="text" name="name" id="" />
+                        <label className="text-xl font-bold" htmlFor="">Item_Name:</label>
+                        <input className="w-full border border-black rounded py-2 px-2" type="text" name="item_name" id="" />
+                    </div>
+                    <div>
+                        <label className="text-xl font-bold" htmlFor="">Subcategory_Name:</label>
+                        <input className="w-full border border-black rounded py-2 px-2" type="text" name="subcategory_name" id="" />
                     </div>
                     <div>
                         <label className="text-xl font-bold" htmlFor="">Description:</label>
                         <textarea className="w-full border border-black rounded p-2" name="description" id=""></textarea>
                     </div>
                     <div>
-                        <label className="text-xl font-bold block" htmlFor="">Properties:</label>
-                        <select className="border border-black w-[300px] py-1 rounded" name="properties" id="">
-                            <option value="damage">damage</option>
-                            <option value="durability">durability</option>
-                        </select>
+                        <label className="text-xl font-bold" htmlFor="">Price:</label>
+                        <input className="w-full border border-black rounded py-2 px-2" type="number" name="price" id="" />
                     </div>
                     <div>
-                        <label className="text-xl font-bold" htmlFor="">Photo</label>
+                        <label className="text-xl font-bold" htmlFor="">Processing_time:</label>
+                        <input className="w-full border border-black rounded py-2 px-2" type="number" name="processing_time" id="" />
+                    </div>
+                    <div>
+                        <label className="text-xl font-bold" htmlFor="">Photo:</label>
                         <input className="w-full border border-black rounded py-2 px-2" type="text" name="photo" id="" />
                     </div>
                     <div>
