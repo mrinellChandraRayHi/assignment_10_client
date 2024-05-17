@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
             {
                 path:'/allArtAndCraft',
                 element:<PrivateRouter><AllArtandCraft/></PrivateRouter>,
-                loader:()=>fetch('http://localhost:5000/crafts')
+                loader:()=>fetch('https://assignment-10-server-k8s1b6yxy-mrinells-projects.vercel.app/crafts')
             },
             {
                 path:'/addCraft',
@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
             {
                 path:'/updateCraft/:id',
                 element:<PrivateRouter><UpdateCraft/></PrivateRouter>,
-                loader:({params})=>fetch(`http://localhost:5000/crafts/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-10-server-k8s1b6yxy-mrinells-projects.vercel.app/crafts/${params.id}`)
             },
             {
                 path:'/myArtAndcraft',
