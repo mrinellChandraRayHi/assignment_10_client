@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
                 element:<Home/>
             },
             {
-                path:'/allArtAndCraft',
+                path:'/allArtAndcraft',
                 element:<PrivateRouter><AllArtandCraft/></PrivateRouter>,
                 loader:()=>fetch('https://assignment-10-server-8maov68o3-mrinells-projects.vercel.app/crafts')
             },
