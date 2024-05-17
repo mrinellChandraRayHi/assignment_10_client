@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 const UpdateCraft = () => {
     const loadedUpdateCaraft=useLoaderData()
     const {item_name, subcategory_name, price, description, photo, processing_time, _id}=loadedUpdateCaraft;
-    const handleUpdateform=(e)=>{
+    const handleAddform=(e)=>{
         e.preventDefault();
         const form=e.target;
         const item_name=form.item_name.value;
@@ -25,11 +25,11 @@ const UpdateCraft = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
-            if(data.modifiedCount>0){
+            if(data.insertedId){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your craft has been Updated",
+                    title: "Your craft has been saved",
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -39,7 +39,7 @@ const UpdateCraft = () => {
     return (
         <div>
             <div>
-                <form onSubmit={handleUpdateform} className="p-2">
+                <form onSubmit={handleAddform} className="p-2">
                     <div>
                         <h1 className="text-5xl text-center font-bold mt-10">This is Update Form</h1>
                     </div>
